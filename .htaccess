@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^/$ http://www.pling.org.uk/journal/2013/manchester-tech-nights/ [R=302,L]
