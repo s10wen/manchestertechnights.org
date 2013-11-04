@@ -153,6 +153,10 @@ section {
     vertical-align: top;
 }
 
+*[itemprop=subEvent] p[itemprop=description] {
+    font-style: italic;
+}
+
 a[href^='http://lanyrd.com'] {
     font-family: 'ostrich_sansblack', sans-serif;
     font-size: 2.4rem;
