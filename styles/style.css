@@ -125,23 +125,6 @@ only screen and ( min-resolution: 1.25dppx)
     }
 }
 
-@media
-only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25),
-only screen and (min-width: 480px) and ( min--moz-device-pixel-ratio: 1.25),
-only screen and (min-width: 480px) and ( -o-min-device-pixel-ratio: 1.25/1),
-only screen and (min-width: 480px) and ( min-device-pixel-ratio: 1.25),
-only screen and (min-width: 480px) and ( min-resolution: 200dpi),
-only screen and (min-width: 480px) and ( min-resolution: 1.25dppx)
-{
-    header {
-        background-image: url('images/retina-header-banner.png');
-    }
-
-    header h1 {
-        background-image: url('images/retina-logo.png');
-    }
-}
-
 section {
     clear: both;
 }
@@ -160,4 +143,35 @@ section {
 a[href^='http://lanyrd.com'] {
     font-family: 'ostrich_sansblack', sans-serif;
     font-size: 2.4rem;
+}
+
+a[href^='http://www.ukfast.com'] {
+    background-image: url('../styles/images/ukfast.png');
+    background-repeat: no-repeat;
+    background-size: 190px 28px;
+    display: inline-block;
+    height: 28px;
+    text-indent: -10000px;
+    width: 190px;
+}
+
+@media
+only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-width: 480px) and ( min--moz-device-pixel-ratio: 1.25),
+only screen and (min-width: 480px) and ( -o-min-device-pixel-ratio: 1.25/1),
+only screen and (min-width: 480px) and ( min-device-pixel-ratio: 1.25),
+only screen and (min-width: 480px) and ( min-resolution: 200dpi),
+only screen and (min-width: 480px) and ( min-resolution: 1.25dppx)
+{
+    header {
+        background-image: url('images/retina-header-banner.png');
+    }
+
+    header h1 {
+        background-image: url('images/retina-logo.png');
+    }
+
+    a[href^='http://www.ukfast.com'] {
+        background-image: url('../styles/images/ukfast_retina.png');
+    }
 }
