@@ -47,6 +47,10 @@ header, footer {
     background-color: #e4e4e4;
 }
 
+nav {
+    background-color: #D8E0CA;
+}
+
 header {
     background-image: url('images/mobile-header-banner.png');
     background-repeat: repeat-x;
@@ -64,11 +68,12 @@ header h1 {
     font-family: 'Rokkitt', serif;
 }
 
-footer {
+nav, footer {
     padding: 2rem;
 }
 
-p {
+p, li {
+    font-size: 1.2rem;
     margin: 1rem auto;
     max-width: 820px;
     line-height: 1.25rem;
@@ -119,7 +124,7 @@ only screen and ( min-resolution: 1.25dppx)
         font-size: 2.2rem;
     }
 
-    p {
+    p, li {
         font-size: 1.4rem;
         line-height: 1.75rem;
     }
@@ -174,4 +179,20 @@ only screen and (min-width: 480px) and ( min-resolution: 1.25dppx)
     a[href^='http://www.ukfast.com'] {
         background-image: url('../styles/images/ukfast_retina.png');
     }
+}
+
+ol, ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.code-of-conduct li, .code-of-conduct p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.code-of-conduct ul {
+    list-style-type: square;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
