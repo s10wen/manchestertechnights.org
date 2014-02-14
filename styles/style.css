@@ -160,6 +160,20 @@ a[href^='http://www.ukfast.com'] {
     width: 190px;
 }
 
+.sponsor {
+    background-color: white;
+}
+
+a[href^='http://www.boohoo.com'] {
+    background-image: url('../styles/images/boohoo.png');
+    background-repeat: no-repeat;
+    background-size: 152px 28px;
+    display: inline-block;
+    height: 28px;
+    text-indent: -10000px;
+    width: 152px;
+}
+
 @media
 only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and (min-width: 480px) and ( min--moz-device-pixel-ratio: 1.25),
@@ -178,6 +192,10 @@ only screen and (min-width: 480px) and ( min-resolution: 1.25dppx)
 
     a[href^='http://www.ukfast.com'] {
         background-image: url('../styles/images/ukfast_retina.png');
+    }
+
+    a[href^='http://www.boohoo.com'] {
+        background-image: url('../styles/images/boohoo_retina.png');
     }
 }
 
