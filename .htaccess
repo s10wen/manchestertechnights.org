@@ -3,4 +3,4 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 Header set Cache-Control "public"
 
 RewriteEngine on
-RewriteRule ^$ http://manchestertechnights.org/2/ [R=302,L]
+RewriteRule ^$ http://manchestertechnights.org/3/ [R=302,L]
