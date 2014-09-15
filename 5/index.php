@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+$token = md5(uniqid(rand(), true));
+setcookie('csrftoken', $token);
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Manchester Tech Nights</title>
@@ -6,7 +9,18 @@
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <meta name="viewport" content="width=device-width">
 </head>
-<body>
+<body data-csrf-token="<?php echo htmlspecialchars($token); ?>">
+<section class="mailing-list-banner">
+    <form action="/mlsignup.php" method="post">
+        <label for="email">E-mail</label><input type="email" name="email" id="email" placeholder="your@awesome.email.address" required="true">
+        <input type="submit" value="Join our mailing list">
+    </form>
+    <p>
+        We want to make sure you know about the upcoming Tech Nights, and don't miss out on any interesting speakers
+        or last minute changes - even if you don't follow us on Twitter. So sign up to our mailing list to receive
+        information about future Manchester Tech Nights!
+    </p>
+</section>
 <article itemscope itemtype="http://schema.org/Event">
     <header>
         <h1 itemprop="name">Manchester Tech Nights #5</h1>
@@ -66,6 +80,7 @@
         they will be dealt with in confidence and appropriately.
     </p>
 </footer>
+<script src="/js/mlsignup.js"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
