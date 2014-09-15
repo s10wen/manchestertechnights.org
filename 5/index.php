@@ -1,6 +1,6 @@
 <?php
 $token = md5(uniqid(rand(), true));
-setcookie('csrftoken', $token);
+setcookie('csrftoken', $token, 0, '/');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

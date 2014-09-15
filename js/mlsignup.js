@@ -55,11 +55,11 @@
             signupMessage.innerText = 'Sorry, but an error occurred.';
         }
 
-//        if (getCookie(signedUpCookie) !== 'true') {
+        if (getCookie(signedUpCookie) !== 'true') {
             window.addEventListener('load', function() {
                 mailingListBanner.classList.add('enabled');
             });
-//        }
+        }
 
         signupForm.addEventListener('submit', function(ev) {
             ev.preventDefault();
