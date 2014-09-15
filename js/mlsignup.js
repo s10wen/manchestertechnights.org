@@ -45,7 +45,7 @@
 
         function reportSignUpSuccess() {
             signupMessage.innerText = 'Thanks for signing up!';
-            document.cookie = signedUpCookie + '=true; max-age=' + (60 * 60 * 24 * 365 * 10);
+            document.cookie = signedUpCookie + '=true; max-age=' + (60 * 60 * 24 * 365 * 10) + '; path=/';
             setTimeout(function() {
                 mailingListBanner.classList.remove('enabled');
             }, 5000);
