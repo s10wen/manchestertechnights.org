@@ -235,6 +235,7 @@ ol, ul {
     color: #fff;
     max-height: 0px;
     overflow: hidden;
+    transition: 2s ease;
 }
 
 .mailing-list-banner form {
@@ -288,6 +289,5 @@ ol, ul {
 {
     .mailing-list-banner.enabled {
         max-height: 500px;
-        transition: 2s ease;
     }
 }

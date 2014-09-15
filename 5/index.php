@@ -11,15 +11,15 @@ setcookie('csrftoken', $token, 0, '/');
 </head>
 <body data-csrf-token="<?php echo htmlspecialchars($token); ?>">
 <section class="mailing-list-banner">
-    <form action="/mlsignup.php" method="post">
-        <label for="email">E-mail</label><input type="email" name="email" id="email" placeholder="your@awesome.email.address" required="true">
-        <input type="submit" value="Join our mailing list">
-    </form>
-    <p>
+    <p aria-live="polite">
         We want to make sure you know about the upcoming Tech Nights, and don't miss out on any interesting speakers
         or last minute changes - even if you don't follow us on Twitter. So sign up to our mailing list to receive
         information about future Manchester Tech Nights!
     </p>
+    <form action="/mlsignup.php" method="post">
+        <label for="email">E-mail</label><input type="email" name="email" id="email" placeholder="your@awesome.email.address" required="true">
+        <input type="submit" value="Join our mailing list">
+    </form>
 </section>
 <article itemscope itemtype="http://schema.org/Event">
     <header>
