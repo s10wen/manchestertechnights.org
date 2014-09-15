@@ -23,7 +23,6 @@ function addSubscriber($email)
     $request = curl_init();
     curl_setopt_array($request, [
         CURLOPT_CONNECTTIMEOUT => 5,
-        CURLOPT_FAILONERROR => true,
         CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
         CURLOPT_POST => true,
         CURLOPT_POSTFIELDS => json_encode([
@@ -34,19 +33,22 @@ function addSubscriber($email)
                 'optin_ip' => $_SERVER['REMOTE_ADDR']
             ]
         ]),
+        CURLOPT_RETURNTRANSFER => 1,
         CURLOPT_TIMEOUT => 5,
         CURLOPT_URL => 'https://us9.api.mailchimp.com/2.0/lists/subscribe.json',
     ]);
 
     $result = curl_exec($request);
 
-    if ($result === false) {
+    if ($result === false || curl_getinfo($request, CURLINFO_HTTP_CODE) !== 200) {
         error_log("CURL error from MailChimp: " . curl_error($request));
         error_log($result);
+        curl_close($request);
+        return false;
+    } else {
+        curl_close($request);
+        return true;
     }
-
-    curl_close($request);
-    return $result !== false;
 }
 
 if (verifyCsrf() && verifyEmail()) {
