@@ -1,5 +1,7 @@
 <?php
 
+include 'config.php';
+
 ini_set('display_errors', 'false');
 
 header('Content-Type: application/json');
@@ -25,7 +27,7 @@ function addSubscriber($email)
         CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
         CURLOPT_POST => true,
         CURLOPT_POSTFIELDS => json_encode([
-            'apikey' => $_ENV['MAILCHIMP_API_KEY'],
+            'apikey' => MAILCHIMP_API_KEY,
             'id' => '7b9695c17f',
             'email' => ['email' => $email],
             'merge_vars' => [
