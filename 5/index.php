@@ -25,7 +25,7 @@ setcookie('csrftoken', $token, 0, '/');
     <header>
         <h1 itemprop="name">Manchester Tech Nights #5</h1>
         <p><a href="https://twitter.com/mcrtechnights" class="twitter-follow-button">Follow @mcrtechnights</a></p>
-        <h2><meta itemprop="startDate" content="2014-10-09T19:00:00Z">Thursday 10th October 2014, 7pm</h2>
+        <h2><meta itemprop="startDate" content="2014-10-09T19:00:00Z">Thursday 9th October 2014, 7pm</h2>
         <h2 itemprop="location" itemscope itemtype="http://schema.org/Place">
             <a href="http://spaceportx.com/" itemprop="url">
                 <span itemprop="name">Spaceport</span> (ex-TechHub Manchester)
