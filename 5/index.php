@@ -45,17 +45,22 @@ setcookie('csrftoken', $token, 0, '/');
         <p><a href="http://lanyrd.com/2014/manchester-tech-nights-5/">Attend on Lanyrd</a></p>
     </header>
     <section>
-        <h1>Talks</h1>
+        <h1>Headline Speakers</h1>
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-            <h2>TBA</h2>
-            <p>Twenty and five minute slots is available on the night for anyone who's interested,
-                <a href="mailto:hello@manchestertechnights.org">e-mail us</a> to discuss!</p>
+            <h2 itemprop="name">To Be Announced</h2>
+        </div>
+    </section>
+    <section>
+        <h1>Lightning Talks</h1>
+        <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Why Mentors Matter</h2>
+            <p itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vimla Appadoo</span></p>
         </div>
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">You?</h2>
             <p itemprop="description">
-                There are 30 second 'elevator' slots available on the night for anyone who wants
-                to talk, just speak to an organiser on the night for the elevator slots, or
+                There are 5 minute 'lightning' and 30 second 'elevator' slots available on the night for anyone
+                who wants to talk, just speak to an organiser on the night for the elevator slots, or
                 <a href="mailto:hello@manchestertechnights.org">contact us</a> about the lightning slots.
             </p>
         </div>
