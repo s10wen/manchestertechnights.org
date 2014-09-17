@@ -239,7 +239,7 @@ ol, ul {
 }
 
 .mailing-list-banner form {
-    padding: 2rem 0 1rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .mailing-list-banner input[name='email'] {
@@ -279,10 +279,6 @@ ol, ul {
 .mailing-list-banner label {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
-}
-
-.mailing-list-banner p {
-    padding-bottom: 1.6rem;
 }
 
 @media only screen and (min-width: 480px)
