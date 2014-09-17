@@ -15,7 +15,7 @@ function verifyCsrf()
 
 function verifyEmail()
 {
-    return filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) !== false;
+    return isset($_POST['email']) && filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL) !== false;
 }
 
 function addSubscriber($email)
