@@ -49,8 +49,7 @@ setcookie('csrftoken', $token, 0, '/');
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">To Be Announced</h2>
             <p itemprop="description">
-                <em itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Dr Maria Schotlz</span></em>
-
+                <em itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Dr Maria Stukoff</span></em>
             </p>
         </div>
     </section>
