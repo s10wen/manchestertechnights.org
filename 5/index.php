@@ -47,7 +47,7 @@ setcookie('csrftoken', $token, 0, '/');
     <section>
         <h1>Headline Speakers</h1>
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-            <h2 itemprop="name">To Be Announced</h2>
+            <h2 itemprop="name">Hello PlayStation!</h2>
             <p itemprop="description">
                 <em itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Dr Maria Stukoff</span></em>
             </p>
@@ -58,6 +58,10 @@ setcookie('csrftoken', $token, 0, '/');
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">Why Mentors Matter</h2>
             <p itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vimla Appadoo</span></p>
+        </div>
+        <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Secure and Managed File Transfer</h2>
+            <p itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Pradeep Hallikeri</span></p>
         </div>
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">You?</h2>
