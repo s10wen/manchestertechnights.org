@@ -64,6 +64,10 @@ setcookie('csrftoken', $token, 0, '/');
             <p itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Pradeep Hallikeri</span></p>
         </div>
         <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+            <h2 itemprop="name">Advergames</h2>
+            <p itemprop="performer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Simon Smith</span></p>
+        </div>
+        <div itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
             <h2 itemprop="name">You?</h2>
             <p itemprop="description">
                 There are 5 minute 'lightning' and 30 second 'elevator' slots available on the night for anyone
