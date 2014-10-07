@@ -184,6 +184,17 @@ a[href^='http://www.bytemark.co.uk'] {
     width: 271px;
 }
 
+a[href^='http://www.melbourne.co.uk'] {
+    background-image: url('../styles/images/melbourne_logo.png');
+    background-repeat: no-repeat;
+    background-size: 142px 40px;
+    display: inline-block;
+    height: 40px;
+    text-indent: -10000px;
+    vertical-align: middle;
+    width: 142px;
+}
+
 @media
 only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and (min-width: 480px) and ( min--moz-device-pixel-ratio: 1.25),
@@ -210,6 +221,10 @@ only screen and (min-width: 480px) and ( min-resolution: 1.25dppx)
 
     a[href^='http://www.bytemark.co.uk'] {
         background-image: url('../styles/images/bytemark_retina.png');
+    }
+
+    a[href^='http://www.melbourne.co.uk'] {
+        background-image: url('../styles/images/melbourne_logo_retina.png');
     }
 }
 

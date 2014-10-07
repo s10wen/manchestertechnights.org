@@ -43,6 +43,7 @@ setcookie('csrftoken', $token, 0, '/');
             a headline talk, followed by a series of shorter lightning talks and then an informal chat between attendees.
         </p>
         <p><a href="http://lanyrd.com/2014/manchester-tech-nights-5/">Attend on Lanyrd</a></p>
+        <p class="sponsor">Manchester Tech Nights would like to thank <a href="http://www.melbourne.co.uk/">Melbourne Server Hosting</a> for sponsoring our fifth event!</p>
     </header>
     <section>
         <h1>Headline Speakers</h1>
